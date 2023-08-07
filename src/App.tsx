@@ -3,15 +3,17 @@ import './App.css'
 import Header from './header'
 import Section from './section'
 import Form from './form'
+import Success from './success'
 
 function App() {
 
   return (
-      <div>
+      <main>
         <Header />
         <Section />
         <Form />
-    </div>
+        <Success />
+    </main>
   )
 }
 
