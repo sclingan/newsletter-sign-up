@@ -50,10 +50,32 @@ main {
   font-family: "Roboto";
   font-size: 1rem;
   font-weight: 400;
+  color: hsl(235, 18%, 26%);
 }
 
 section {
   padding-inline: 1rem;
+}
+
+h2 {
+  color: hsl(234, 29%, 20%);
+  font-size: 2.5rem;
+  padding-block: 1.2rem;
+}
+
+p {
+  padding-bottom: 1rem;
+}
+
+ul {
+  list-style-image: url(../public/images/icon-list.svg);
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+li {
+  padding-block: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 form {

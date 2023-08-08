@@ -19,10 +19,34 @@ main {
     font-family: $ff;
     font-size: $font-size;
     font-weight: $fw-400;
+    color: $neutral-charcoal-grey;
 }
 
 section {
     padding-inline: 1rem;
+}
+
+h2 {
+    color: $neutral-slate-grey;
+    font-size: 2.5rem;
+    padding-block: 1.2rem;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+ul {
+    list-style-image: url(../public/images/icon-list.svg);
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+li {
+    // background-image: url(../public/images/icon-list.svg);
+    // background-repeat: no-repeat;
+    padding-block: 0.5rem;
+    padding-left: 0.5rem;
 }
 
 form {
