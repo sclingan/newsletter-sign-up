@@ -3,10 +3,9 @@
 function Form() {
     return(
         <form>
-             Email address
-             email@company.com
-
-             Subscribe to monthly newsletter 
+             <label htmlFor='email'>Email address</label>
+             <input type='email' id='email' placeholder='email@company.com'></input>
+             <button>Subscribe to monthly newsletter</button>
         </form>
     )
 }

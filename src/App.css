@@ -54,30 +54,52 @@ main {
 }
 
 section {
-  padding-inline: 1rem;
+  padding-inline: 1.5rem;
 }
 
 h2 {
   color: hsl(234, 29%, 20%);
   font-size: 2.5rem;
-  padding-block: 1.2rem;
+  padding-block: 1.5rem;
 }
 
 p {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 ul {
-  list-style-image: url(../public/images/icon-list.svg);
   margin: 0;
-  padding-left: 1.5rem;
+  padding: 0;
+  list-style-type: none;
+  padding-right: 1.5rem;
 }
 
 li {
-  padding-block: 0.5rem;
-  padding-left: 0.5rem;
+  background-image: url(../public/images/icon-list.svg);
+  background-repeat: no-repeat;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
 }
 
 form {
-  padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: hsl(234, 29%, 20%);
+}
+
+input[type=email] {
+  padding: 0.7rem 1rem;
+  border: 0.1rem solid hsl(231, 7%, 60%);
+  border-radius: 0.5rem;
+}
+
+button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(235, 18%, 26%);
 }/*# sourceMappingURL=App.css.map */
