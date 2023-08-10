@@ -10,6 +10,11 @@ $ff: 'Roboto';
 $fw-400: 400;
 $fw-700: 700;
 
+/* TODO:
+     fix color on input outline
+     check accessibility on image/bullet points/form
+*/
+
 main {
     display: flex;
     flex-direction: column;
@@ -54,6 +59,8 @@ form {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    min-width: 95%; // watch this on responsive
+    padding-inline: 1rem;
 }
 
 label {
@@ -64,11 +71,20 @@ label {
 
 input[type='email'] {
     padding: 0.7rem 1rem;
-    border: 0.1rem solid $neutral-grey;
+    border: 0.02rem solid $neutral-grey;
     border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 button {
     color: $neutral-white;
     background-color: $neutral-charcoal-grey;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: $primary-tomato;
 }

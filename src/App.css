@@ -41,6 +41,10 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/* TODO:
+     fix color on input outline
+     check accessibility on image/bullet points/form
+*/
 main {
   display: flex;
   flex-direction: column;
@@ -85,6 +89,8 @@ form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  min-width: 95%;
+  padding-inline: 1rem;
 }
 
 label {
@@ -95,11 +101,20 @@ label {
 
 input[type=email] {
   padding: 0.7rem 1rem;
-  border: 0.1rem solid hsl(231, 7%, 60%);
+  border: 0.02rem solid hsl(231, 7%, 60%);
   border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 button {
   color: hsl(0, 0%, 100%);
   background-color: hsl(235, 18%, 26%);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(4, 100%, 67%);
 }/*# sourceMappingURL=App.css.map */
