@@ -74,10 +74,12 @@ input[type='email'] {
     border: 0.02rem solid $neutral-grey;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 button {
     color: $neutral-white;
+    font-weight: $fw-700;
     background-color: $neutral-charcoal-grey;
     border: none;
     border-radius: 0.5rem;
@@ -87,4 +89,21 @@ button {
 
 button:hover {
     background-color: $primary-tomato;
+}
+
+@media(min-width: 50rem) {
+    
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type='email'] {
+    //  max-width: 40%;
+  }
+
+  button {
+    //  max-width: 40%;
+  }
 }
