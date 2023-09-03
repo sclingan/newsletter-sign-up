@@ -10,6 +10,7 @@ function App() {
   return (
       <main>
         <Header />
+        <h1 className='sr-only'>Newsletter sign up</h1>
         <Section />
         <Form />
         {/* <Success /> */}

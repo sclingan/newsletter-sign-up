@@ -13,6 +13,8 @@ $fw-700: 700;
 /* TODO:
      fix color on input outline
      check accessibility on image/bullet points/form
+     learn how to import local fonts
+     find correct way to hide error text until error occurs
 */
 
 main {
@@ -58,9 +60,11 @@ li {
 form {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 0.5rem;
     min-width: 95%; // watch this on responsive
     padding-inline: 1rem;
+    margin-top: 1.5rem;
 }
 
 label {
@@ -74,8 +78,29 @@ input[type='email'] {
     border: 0.02rem solid $neutral-grey;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
+    min-width: 100%;
     cursor: pointer;
 }
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+
+
+// .placeholder-error {
+//     color: $primary-tomato;
+// }
+
+// .input-error {
+//     border: 0.02rem solid $primary-tomato;
+//     background-color: rgb(248, 208, 208);
+// }
 
 button {
     color: $neutral-white;
@@ -84,11 +109,18 @@ button {
     border: none;
     border-radius: 0.5rem;
     padding: 1rem 2rem;
+    min-width: 100%;
     cursor: pointer;
 }
 
 button:hover {
     background-color: $primary-tomato;
+}
+
+.error {
+    color: $primary-tomato;
+    font-size: 0.8rem;
+    padding-left: 7.5rem;
 }
 
 @media(min-width: 50rem) {
@@ -100,10 +132,10 @@ button:hover {
   }
 
   input[type='email'] {
-    //  max-width: 40%;
+    min-width: 33%;
   }
 
   button {
-    //  max-width: 40%;
+     min-width: 33%;
   }
 }
