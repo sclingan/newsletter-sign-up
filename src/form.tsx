@@ -4,7 +4,7 @@ import { useState } from 'react';
 function Form() {
 
     const [email, setEmail] = useState('');
-
+        // Find correct type for e: event
     function showInput(e: any) {
         e.preventDefault();
         console.log(email);
@@ -13,6 +13,8 @@ function Form() {
         const regex = /(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@[*[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+]*/;
         const answer : boolean = regex.test(email);
         console.log(answer);
+        // on success open success.tsx
+        // on error, set error states, show active error states
     }
 
     return(

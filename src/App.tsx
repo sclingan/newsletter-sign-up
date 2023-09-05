@@ -11,9 +11,11 @@ function App() {
       <main>
         <Header />
         <h1 className='sr-only'>Newsletter sign up</h1>
+        <div>
         <Section />
         <Form />
         {/* <Success /> */}
+        </div>
     </main>
   )
 }

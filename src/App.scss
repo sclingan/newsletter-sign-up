@@ -124,18 +124,29 @@ button:hover {
 }
 
 @media(min-width: 50rem) {
-    
+  
+  main {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  header {
+    grid-column: 2;
+    grid-row: 1/2;
+  }
+
   form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    grid-column: 1;
   }
 
   input[type='email'] {
-    min-width: 33%;
+    // min-width: 33%;
   }
 
   button {
-     min-width: 33%;
+    //  min-width: 33%;
   }
 }
