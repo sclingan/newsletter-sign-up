@@ -8,13 +8,13 @@ import Success from './success'
 function App() {
 
   return (
-      <main>
+      <main id='main'>
         <Header />
         <h1 className='sr-only'>Newsletter sign up</h1>
         <div>
         <Section />
         <Form />
-        {/* <Success /> */}
+        <Success />
         </div>
     </main>
   )

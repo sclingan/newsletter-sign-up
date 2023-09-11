@@ -28,7 +28,7 @@ function Form() {
     return(
         <form>
              <label htmlFor='email'>Email address<span className="sr-only">Valid email required</span></label>
-             <input type='email' id='email' value={email} onChange={e => setEmail(e.target.value)}placeholder='email@company.com' autoComplete="off" className='input-error'></input>
+             <input type='email' id='email' value={email} onChange={e => setEmail(e.target.value)}placeholder='email@company.com' autoComplete="off"></input>
              <button onClick={showInput}>Subscribe to monthly newsletter</button>
         </form>
     )

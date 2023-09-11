@@ -1,7 +1,7 @@
 
 function Success() {
     return(
-        <div>
+        <div className="sr-only" id='success'>
             <img src="../public/images/icon-success.svg"></img>
             <h2>Thanks for subscribing!</h2>
             <p>A confirmation email has been sent to ash@loremcompany.com. 
