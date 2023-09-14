@@ -19,6 +19,9 @@ function Form() {
         }else{
             console.log('failed');
             let error = document.getElementsByTagName('span');
+            let input = document.getElementById('email');
+            console.log(input);
+            input.classList.add('input-error');
             error[0].classList.remove('sr-only');
             error[0].classList.add('error');
             console.log(error);

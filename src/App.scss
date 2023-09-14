@@ -72,6 +72,7 @@ label {
     font-weight: $fw-700;
     font-size: 0.8rem;
     color: $neutral-slate-grey;
+    min-width: 95%;
 }
 //attribute selector
 input[type='email'] {
@@ -140,4 +141,9 @@ button:hover {
     align-items: center;
     grid-column: 1;
   }
+
+  .error {
+    padding-left: 13rem;
+  }
+
 }

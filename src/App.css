@@ -102,6 +102,7 @@ label {
   font-weight: 700;
   font-size: 0.8rem;
   color: hsl(234, 29%, 20%);
+  min-width: 95%;
 }
 
 input[type=email] {
@@ -167,5 +168,8 @@ button:hover {
     flex-direction: column;
     align-items: center;
     grid-column: 1;
+  }
+  .error {
+    padding-left: 13rem;
   }
 }/*# sourceMappingURL=App.css.map */
