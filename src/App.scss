@@ -74,8 +74,8 @@ label {
     color: $neutral-slate-grey;
     min-width: 95%;
 }
-//attribute selector
-input[type='email'] {
+
+.input {
     padding: 0.7rem 1rem;
     border: 0.02rem solid $neutral-grey;
     border-radius: 0.5rem;
@@ -86,6 +86,7 @@ input[type='email'] {
 
 .input-error {
     border: 0.02rem solid $primary-tomato;
+    outline: $primary-tomato;
     color: $primary-tomato;
 }
 
