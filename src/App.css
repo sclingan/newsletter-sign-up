@@ -152,6 +152,11 @@ button:hover {
   padding-left: 7.5rem;
 }
 
+#success {
+  max-width: 39%;
+  margin: 0 auto;
+}
+
 @media (min-width: 50rem) {
   main {
     display: grid;

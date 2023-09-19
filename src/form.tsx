@@ -19,8 +19,15 @@ function Form() {
             // remove class main
             // add class success
             let main = document.getElementsByTagName('main');
+            let success = document.getElementById('success');
+            let header = document.getElementsByTagName('header')
+            let section = document.getElementsByTagName('section');
+            let form = document.getElementsByTagName('form');
+            success?.classList.remove('sr-only');
+            form[0].classList.add('sr-only');
+            section[0].classList.add('sr-only');
+            header[0].classList.add('sr-only');
             console.log(main);
-            // main[0].classList.add('sr-only');
         }else{
             console.log('failed');
             let error = document.getElementsByTagName('span');

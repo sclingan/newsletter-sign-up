@@ -8,7 +8,7 @@ import Success from './success'
 function App() {
 
   return (
-      <main id='main'>
+      <main>
         <Header />
         <h1 className='sr-only'>Newsletter sign up</h1>
         <div>
