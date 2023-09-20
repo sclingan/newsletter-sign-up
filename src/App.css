@@ -153,7 +153,7 @@ button:hover {
 }
 
 #success {
-  max-width: 39%;
+  padding-inline: 1rem;
   margin: 0 auto;
 }
 
@@ -177,5 +177,9 @@ button:hover {
   }
   .error {
     padding-left: 13rem;
+  }
+  #success {
+    max-width: 39%;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=App.css.map */
