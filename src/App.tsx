@@ -1,12 +1,13 @@
-// import { useState } from 'react'
 import './App.css'
 import Header from './header'
 import Section from './section'
 import Form from './form'
 import Success from './success'
+// import { useState } from 'react';
 
 function App() {
-
+  // const [email, setEmail] = useState('');
+  
   return (
       <main>
         <Header />

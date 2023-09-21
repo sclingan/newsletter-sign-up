@@ -4,7 +4,7 @@ import { useState } from 'react';
 function Form() {
 
     const [email, setEmail] = useState('');
-        // Find correct type for e: event
+        //Find correct type for e: event
     function showInput(e: any) {
         e.preventDefault();
         console.log(email);
