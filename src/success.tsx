@@ -1,5 +1,8 @@
 
 function Success(props: any) {
+    function reload() {
+        window.location.reload()
+    }
     return(
         <div className="sr-only" id='success'>
             <img src="../public/images/icon-success.svg"></img>
@@ -7,7 +10,7 @@ function Success(props: any) {
             <p>A confirmation email has been sent to {props.email}. 
                Please open it and click the button inside to confirm your subscription.</p>
                {/* Add logic to dismiss message and reload page */}
-            <button>Dismiss message</button>   
+            <button onClick={reload}>Dismiss message</button>   
         </div>
     )
 }
