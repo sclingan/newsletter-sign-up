@@ -1,9 +1,9 @@
+import { FormEvent } from "react";
 
 
 function Form(props: any) {
 
-        //Find correct type for e: event
-    function showInput(e: any) {
+    function showInput(e: FormEvent) {
         e.preventDefault();
         console.log(props.email);
 
@@ -13,8 +13,6 @@ function Form(props: any) {
         // on success open success.tsx
         // on error, set error states, show active error states
         if(answer) {
-            console.log('passed');
-            // remove class main
             // add class success
             let success = document.getElementById('success');
             let header = document.getElementsByTagName('header')

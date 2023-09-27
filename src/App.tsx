@@ -6,7 +6,7 @@ import Success from './success'
 import { useState } from 'react';
 
 function App() {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState<string>('');
   
   return (
       <main>
