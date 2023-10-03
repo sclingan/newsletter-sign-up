@@ -4,7 +4,7 @@ function Success(props: any) {
         window.location.reload()
     }
     return(
-        <div className="sr-only" id='success'>
+        <div className="hidden" id='success'>
             <img src="../public/images/icon-success.svg"></img>
             <h2>Thanks for subscribing!</h2>
             <p>A confirmation email has been sent to {props.email}. 

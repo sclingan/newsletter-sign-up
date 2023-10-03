@@ -10,11 +10,6 @@ $ff: 'Roboto';
 $fw-400: 400;
 $fw-700: 700;
 
-/* TODO:
-     check accessibility on image/bullet points/form
-     learn how to import local fonts
-     find correct way to hide error text until error occurs
-*/
 
 main {
     display: flex;
@@ -96,6 +91,10 @@ label {
     position: absolute;
     white-space: nowrap; 
     width: 1px;
+  }
+
+  .hidden {
+    display: none;
   }
 
 button {

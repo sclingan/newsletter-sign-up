@@ -41,11 +41,6 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-/* TODO:
-     check accessibility on image/bullet points/form
-     learn how to import local fonts
-     find correct way to hide error text until error occurs
-*/
 main {
   display: flex;
   flex-direction: column;
@@ -127,6 +122,10 @@ label {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.hidden {
+  display: none;
 }
 
 button {
